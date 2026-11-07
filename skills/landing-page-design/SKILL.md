@@ -126,6 +126,8 @@ Work section by section, in this order:
 
 Never rebuild the whole page on each iteration. Section by section keeps control and keeps diffs reviewable.
 
+Treat the 20 checks in A9 as build rules from the first section, not as a review after the page is done.
+
 ## A7. SEO and AEO
 
 **Do not index** ad only campaign pages or highly time bound offers. Use `noindex` or keep them behind a non indexed path.
@@ -140,6 +142,12 @@ Never rebuild the whole page on each iteration. Section by section keeps control
 - Proof buried at the bottom
 - Mobile layout that breaks readability
 - No clear next step
+
+## A9. UI craft checklist (20 checks)
+
+Before calling a page done, run the 20 checks in [`references/ui-craft-checklist.md`](references/ui-craft-checklist.md). Score each Pass, Fail or N/A and report Fails only, with evidence and a fix.
+
+The checks, in short: delete filler badges, drop redundant labels, unitalicize random words, mono only where needed, use a design system, show the actual product, enlarge the main feature, group with spacing, make headlines specific, emphasize the CTA, add an accent colour, keep icons consistent, remove embellishments, inner radius equals outer minus padding, improve text contrast, wrap headlines properly, align by eye not pixels, use tabular nums, add loading states, animate useful feedback.
 
 ---
 
@@ -373,6 +381,7 @@ Things that get forgotten and make a page feel unfinished:
 - Semantic HTML: `<nav>`, `<main>`, `<article>`, `<aside>`, `<section>`
 - A way back from every page
 - A check at 390px wide: no horizontal overflow, buttons keep their text inside, and the primary action is visible in the first screen
+- The A9 UI craft checklist run on the finished page, with every Fail fixed or given a written exception
 
 ## B11. Tagline reveal section (mandatory)
 
